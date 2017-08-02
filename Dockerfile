@@ -1,5 +1,5 @@
-FROM fedora
-LABEL maintainer "Kateryna Shlyakhovetska <shkate@jetbrains.com>"
+FROM fedora:26
+#Derived from official TeamCity image
 LABEL modified "Alexis Jeandet <alexis.jeandet@member.fsf.org>"
 
 RUN dnf install -y java-1.8.0-openjdk mercurial git tar gzip unzip
