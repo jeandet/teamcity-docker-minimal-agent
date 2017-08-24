@@ -1,5 +1,8 @@
 #!/bin/bash
 
+Xvfb :99 &
+export DISPLAY=:99
+
 echo '/run-services.sh'
 
 for entry in /services/*.sh

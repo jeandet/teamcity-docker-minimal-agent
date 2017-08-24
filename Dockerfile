@@ -2,7 +2,7 @@ FROM fedora:26
 #Derived from official TeamCity image
 LABEL modified "Alexis Jeandet <alexis.jeandet@member.fsf.org>"
 
-RUN dnf install -y java-1.8.0-openjdk mercurial git tar gzip unzip
+RUN dnf install -y java-1.8.0-openjdk mercurial git tar gzip unzip xorg-x11-server-Xvfb
 
 VOLUME /data/teamcity_agent/conf
 ENV CONFIG_FILE=/data/teamcity_agent/conf/buildAgent.properties \
