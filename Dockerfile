@@ -24,7 +24,8 @@ RUN useradd -m buildagent && \
     rm $TEAMCITY_AGENT_DIST/buildAgent.zip && \
     sync 
 #add line return for derived images
-RUN echo " " >> /opt/buildagent/conf/buildAgent.dist.properties
+RUN echo " " >> /opt/buildagent/conf/buildAgent.dist.properties && \
+    echo "system.distrib=fedora" >> /opt/buildagent/conf/buildAgent.dist.properties
 
 CMD ["/run-services.sh"]
 
