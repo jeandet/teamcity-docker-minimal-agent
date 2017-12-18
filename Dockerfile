@@ -1,4 +1,4 @@
-FROM fedora:26
+FROM fedora:27
 #Derived from official TeamCity image
 LABEL modified "Alexis Jeandet <alexis.jeandet@member.fsf.org>"
 
