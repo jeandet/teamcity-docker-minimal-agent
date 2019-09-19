@@ -6,7 +6,7 @@ RUN dnf install -y java-1.8.0-openjdk mercurial git make cmake meson tar gzip un
 
 VOLUME /data/teamcity_agent/conf
 ENV CONFIG_FILE=/data/teamcity_agent/conf/buildAgent.properties \
-    TEAMCITY_AGENT_DIST=/opt/buildagent\
+    TEAMCITY_AGENT_DIST=/opt/buildagent \
     TZ=Europe/Paris
 
 RUN mkdir $TEAMCITY_AGENT_DIST
